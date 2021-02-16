@@ -1,0 +1,117 @@
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	color: #000;
+	background-color: grey;
+	height: 5000px;
+	font-family: Arial;
+}
+/*  */
+.header {
+}
+.nav {
+	background-color: rgb(207, 67, 67);
+	/* text-align: center; */
+	font-size: 30px;
+	padding: 12px 0px 0px 100px;
+	text-transform: uppercase;
+	border-radius: 0 0 20px 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.ul__main > li {
+	display: inline-block;
+	margin: 0px 40px 0px 0px;
+	position: relative;
+	height: 60px;
+}
+.main__link {
+	color: white;
+}
+.ul__main > li:hover .ul__second {
+	display: block;
+}
+.ul__main > li:hover .main__link {
+	text-decoration: underline;
+	color: black;
+}
+.ul__second {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: orange;
+	min-width: 200px;
+	padding: 10px;
+	border-radius: 0 0 20px 20px;
+	color: white;
+}
+.ul__second > li:hover .second__link {
+	color: white;
+	text-decoration: underline;
+}
+.second__link {
+	display: inline-block;
+	margin: 10px 0px 0px 0px;
+	color: black;
+}
+.ul__second li:last-child {
+	margin-bottom: 10px;
+}
+.ul__third {
+	position: absolute;
+	top: 54px;
+	/* Не додумался как сделать что бы верхняя точка третьего списка позиционировалась относительно Подпунка, что вызывает его !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	left: 100%;
+	background-color: green;
+	border-radius: 0 20px 20px 0;
+	min-width: 250px;
+	min-height: 100px;
+	display: none;
+	padding: 2%;
+}
+.ul__second > li:hover .ul__third {
+	display: block;
+}
+.ul__third li {
+}
+
+.third__link {
+	color: black;
+}
+.third__link:hover {
+	color: white;
+	text-decoration: underline;
+}
